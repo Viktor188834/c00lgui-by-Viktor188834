@@ -432,3 +432,5 @@ DeleteGui.MouseButton1Click:Connect(DeleteAllGui)
 DexFrame.MouseButton1Click:Connect(Dex)
 SpeedCoilFrame.MouseButton1Click:Connect(SpeedCoil)
 SecondFrameButton.MouseButton1Click:Connect(SuperUp)
+
+Connect(VisibleGuiScript)
