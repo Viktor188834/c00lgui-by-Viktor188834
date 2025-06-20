@@ -39,17 +39,17 @@ Akkk.Active = true
 Akkk.Text = "Ak47!"
 Akkk.TextColor3 = Color3.fromRGB(255, 255, 255)
 
-local SlideButtoncoolgui = Instance.new("TextButton")
-SlideButtoncoolgui.Name = "SlideButtonGiver"
-SlideButtoncoolgui.Parent = Frame
-SlideButtoncoolgui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-SlideButtoncoolgui.BorderColor3 = Color3.fromRGB(255, 0, 0)
-SlideButtoncoolgui.BorderSizePixel = 4
-SlideButtoncoolgui.Position = UDim2.new(0.5400000036, 0, 0.2799999982, 0)
-SlideButtoncoolgui.Size = UDim2.new(0.360000014, 0, 0.0700000003, 0)
-SlideButtoncoolgui.Active = true
-SlideButtoncoolgui.Text = "SlideButton"
-SlideButtoncoolgui.TextColor3 = Color3.fromRGB(255, 255, 255)
+local EspGenerator = Instance.new("TextButton")
+EspGenerator.Name = "EspGenerator"
+EspGenerator.Parent = Frame
+EspGenerator.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+EspGenerator.BorderColor3 = Color3.fromRGB(255, 0, 0)
+EspGenerator.BorderSizePixel = 4
+EspGenerator.Position = UDim2.new(0.5400000036, 0, 0.2799999982, 0)
+EspGenerator.Size = UDim2.new(0.360000014, 0, 0.0700000003, 0)
+EspGenerator.Active = true
+EspGenerator.Text = "EspGenerator"
+EspGenerator.TextColor3 = Color3.fromRGB(255, 255, 255)
 
 local SpeedCoilFrame = Instance.new("TextButton")
 SpeedCoilFrame.Name = "SpeedCoilFrame"
@@ -284,18 +284,33 @@ local function createPartInFrontOfPlayer()
 	newPart:Destroy()
 end
 
+-- Function to toggle ESP for Generators
+local function toggleEspGenerator()
+	for i, generator in ipairs(workspace:GetDescendants()) do
+    	if generator:FindFirstChild("Meshes/t_Cube.028") then
+        	if not generator:FindFirstChild("EspBox") then
+            	if generator ~= game.Players.LocalPlayer.Character then
+                	local generatotts = Instance.new("Highlight",generator)
+           	    	generatotts.Name = "EspBox"
+					generatotts.FillColor = Color3.fromRGB(0, 255, 0)
+      	      end
+    	    end
+    	end
+	end
+end
+
 -- Function to toggle ESP for players
 local function toggleESP()
 	for i, childrik in ipairs(workspace:GetDescendants()) do
-		if childrik:FindFirstChild("Humanoid") then
-			if not childrik:FindFirstChild("Humanoid") then
-				if childrik ~= game.Players.LocalPlayer.Character then
-					local Highlight = Instance.new("highlight",childrik)
-					Highlight.Parent = childrik
-					Highlight.Name = "ESP"
-				end
-			end
-		end
+    	if childrik:FindFirstChild("Body Colors") then
+        	if not childrik:FindFirstChild("EspBox") then
+            	if childrik ~= game.Players.LocalPlayer.Character then
+                	local esp = Instance.new("Highlight",childrik)
+           	    	esp.Name = "EspBox"
+					esp.FillColor = Color3.fromRGB(255, 0, 0)
+      	      end
+    	    end
+    	end
 	end
 end
 
@@ -438,6 +453,7 @@ end
 -- Connect te function to the button click event
 FrameButton.MouseButton1Click:Connect(createPartInFrontOfPlayer)
 SecondFrameButton.MouseButton1Click:Connect(toggleESP)
+EspGenerator.MouseButton1Click:Connect(toggleEspGenerator)
 HideGui.MouseButton1Click:Connect(ora)
 DeleteGui.MouseButton1Click:Connect(DeleteAllGui)
 DexFrame.MouseButton1Click:Connect(Dex)
