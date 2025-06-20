@@ -1,5 +1,4 @@
 local Player = game:GetService("Players").LocalPlayer
-local Players = game:GetService("Players")
 
 -- Create a ScreenGui instead of GuiMain
 local MainGui = Instance.new("ScreenGui")
@@ -28,17 +27,29 @@ SecondFrameButton.Active = true
 SecondFrameButton.Text = "Toggle ESP"
 SecondFrameButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 
-local SuperUpp = Instance.new("TextButton")
-SuperUpp.Name = "SuperUp"
-SuperUpp.Parent = Frame
-SuperUpp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-SuperUpp.BorderColor3 = Color3.fromRGB(255, 0, 0)
-SuperUpp.BorderSizePixel = 4
-SuperUpp.Position = UDim2.new(0.0900000036, 0, 0.2799999982, 0)
-SuperUpp.Size = UDim2.new(0.360000014, 0, 0.0700000003, 0)
-SuperUpp.Active = true
-SuperUpp.Text = "SuperUp!"
-SuperUpp.TextColor3 = Color3.fromRGB(255, 255, 255)
+local Akkk = Instance.new("TextButton")
+Akkk.Name = "Ak47"
+Akkk.Parent = Frame
+Akkk.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Akkk.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Akkk.BorderSizePixel = 4
+Akkk.Position = UDim2.new(0.0900000036, 0, 0.2799999982, 0)
+Akkk.Size = UDim2.new(0.360000014, 0, 0.0700000003, 0)
+Akkk.Active = true
+Akkk.Text = "Ak47!"
+Akkk.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+local SlideButtoncoolgui = Instance.new("TextButton")
+SlideButtoncoolgui.Name = "SlideButtonGiver"
+SlideButtoncoolgui.Parent = Frame
+SlideButtoncoolgui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SlideButtoncoolgui.BorderColor3 = Color3.fromRGB(255, 0, 0)
+SlideButtoncoolgui.BorderSizePixel = 4
+SlideButtoncoolgui.Position = UDim2.new(0.5400000036, 0, 0.2799999982, 0)
+SlideButtoncoolgui.Size = UDim2.new(0.360000014, 0, 0.0700000003, 0)
+SlideButtoncoolgui.Active = true
+SlideButtoncoolgui.Text = "SlideButton"
+SlideButtoncoolgui.TextColor3 = Color3.fromRGB(255, 255, 255)
 
 local SpeedCoilFrame = Instance.new("TextButton")
 SpeedCoilFrame.Name = "SpeedCoilFrame"
@@ -111,140 +122,140 @@ local hideorvisiblemoyscript = true
 
 local function VisibleGuiScript()
 	Frame.Position = UDim2.new(0.835, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.84, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.845, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.85, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.855, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.86, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.865, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.87, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.875, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.88, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.885, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.89, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.895, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.9, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.905, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.91, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.915, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.92, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.925, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.93, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.935, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.94, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.945, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.95, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.955, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.96, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.965, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.97, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.975, 0, 0.25, 0)
 	HideGui.Text = "<"
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.98, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.985, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.99, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(1, 0, 0.25, 0)
 end
 
 local function HidenGuiScript()
 	Frame.Position = UDim2.new(0.99, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.985, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.98, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.975, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.97, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.965, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.96, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.955, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.95, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.945, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.94, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.935, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.93, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.925, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.92, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.915, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.91, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.905, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	HideGui.Text = ">"
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.90, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.895, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.89, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.885, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.88, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.875, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.87, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.865, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.86, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.855, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.85, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.845, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.84, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.835, 0, 0.25, 0)
-	wait(0.05)
+	task.wait(0.05)
 	Frame.Position = UDim2.new(0.83, 0, 0.25, 0)
 end
 
@@ -269,7 +280,7 @@ local function createPartInFrontOfPlayer()
 	newPart.Anchored = true
 	newPart.Parent = game.Workspace
 	newPart.Material = "Asphalt"
-	wait(15)
+	task.wait(15)
 	newPart:Destroy()
 end
 
@@ -327,70 +338,70 @@ function SpeedCoil()
 	Script1.Name = "SpeedScript"
 	Script1.Parent = Tool0
 	table.insert(cors,sandbox(Script1,function()
-	--Rescripted by samtheblender
-	local Services = {
-		Players = (game:FindService("Players") or game:GetService("Players")),
-		TweenService = (game:FindService("TweenService") or game:GetService("TweenService")),	
-		Debris = (game:FindService("Debris") or game:GetService("Debris")),
-		RunService = (game:FindService("RunService") or game:GetService("RunService"))
-	}
+		--Rescripted by samtheblender
+		local Services = {
+			Players = (game:FindService("Players") or game:GetService("Players")),
+			TweenService = (game:FindService("TweenService") or game:GetService("TweenService")),	
+			Debris = (game:FindService("Debris") or game:GetService("Debris")),
+			RunService = (game:FindService("RunService") or game:GetService("RunService"))
+		}
 
-	local Properties = {
-		SpeedBoost = 10,
-		SpeedForSmoke = 20
-	}
+		local Properties = {
+			SpeedBoost = 10,
+			SpeedForSmoke = 20
+		}
 
-	local Tool = script.Parent
-	local Handle = Tool:WaitForChild("Handle")
-	local Character, Player, Humanoid, Root, LastSpeed, SmokeConnection, SmokeEffect
+		local Tool = script.Parent
+		local Handle = Tool:WaitForChild("Handle")
+		local Character, Player, Humanoid, Root, LastSpeed, SmokeConnection, SmokeEffect
 
-	function CheckIfAlive()
-		return (((Character and Character.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0 and Player and Player.Parent) and true) or false)
-	end
-
-	function ClearEffect()
-		if SmokeEffect then
-			SmokeEffect.Enabled = false
-			Services.Debris:AddItem(SmokeEffect, 5)
-			SmokeEffect = nil
+		function CheckIfAlive()
+			return (((Character and Character.Parent and Humanoid and Humanoid.Parent and Humanoid.Health > 0 and Player and Player.Parent) and true) or false)
 		end
-	end
-	Tool.Equipped:Connect(function()
-		Character = Tool.Parent
-		Player = Services.Players:GetPlayerFromCharacter(Character)
-		Humanoid = Character:FindFirstChildOfClass("Humanoid")
-		Root = Character:FindFirstChild("HumanoidRootPart")
-		Services.RunService.Heartbeat:Wait()
-		if not Tool:IsDescendantOf(workspace) or not CheckIfAlive() or LastSpeed then
-			return
-		end
-		LastSpeed = Humanoid.WalkSpeed
-		Humanoid.WalkSpeed = Humanoid.WalkSpeed + Properties.SpeedBoost
-		Handle:WaitForChild("Equip"):Play()
-		SmokeConnection = Humanoid.Running:Connect(function(Speed)
-			if Speed >= Properties.SpeedForSmoke then
-				if not SmokeEffect then
-					SmokeEffect = Instance.new("Smoke")
-					SmokeEffect.Parent = Root
-				end
-			else
-				ClearEffect()
+
+		function ClearEffect()
+			if SmokeEffect then
+				SmokeEffect.Enabled = false
+				Services.Debris:AddItem(SmokeEffect, 5)
+				SmokeEffect = nil
 			end
+		end
+		Tool.Equipped:Connect(function()
+			Character = Tool.Parent
+			Player = Services.Players:GetPlayerFromCharacter(Character)
+			Humanoid = Character:FindFirstChildOfClass("Humanoid")
+			Root = Character:FindFirstChild("HumanoidRootPart")
+			Services.RunService.Heartbeat:Wait()
+			if not Tool:IsDescendantOf(workspace) or not CheckIfAlive() or LastSpeed then
+				return
+			end
+			LastSpeed = Humanoid.WalkSpeed
+			Humanoid.WalkSpeed = Humanoid.WalkSpeed + Properties.SpeedBoost
+			Handle:WaitForChild("Equip"):Play()
+			SmokeConnection = Humanoid.Running:Connect(function(Speed)
+				if Speed >= Properties.SpeedForSmoke then
+					if not SmokeEffect then
+						SmokeEffect = Instance.new("Smoke")
+						SmokeEffect.Parent = Root
+					end
+				else
+					ClearEffect()
+				end
+			end)
 		end)
-	end)
 
-	Tool.Unequipped:Connect(function()
-		if SmokeConnection then
-			SmokeConnection:Disconnect()
-			SmokeConnection = nil
-		end
-		ClearEffect()
-		if not LastSpeed or not CheckIfAlive() then
-			return
-		end
-		Humanoid.WalkSpeed = LastSpeed
-		LastSpeed = nil
-	end)
+		Tool.Unequipped:Connect(function()
+			if SmokeConnection then
+				SmokeConnection:Disconnect()
+				SmokeConnection = nil
+			end
+			ClearEffect()
+			if not LastSpeed or not CheckIfAlive() then
+				return
+			end
+			Humanoid.WalkSpeed = LastSpeed
+			LastSpeed = nil
+		end)
 	end))
 	Part2.Name = "Handle"
 	Part2.Parent = Tool0
@@ -420,17 +431,15 @@ function SpeedCoil()
 	end
 end
 
-function SuperUp()
-	
+function Ak47()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/sinret/rbxscript.com-scripts-reuploads-/main/ak47", true))() 
 end
 
--- Connect the function to the button click event
+-- Connect te function to the button click event
 FrameButton.MouseButton1Click:Connect(createPartInFrontOfPlayer)
 SecondFrameButton.MouseButton1Click:Connect(toggleESP)
 HideGui.MouseButton1Click:Connect(ora)
 DeleteGui.MouseButton1Click:Connect(DeleteAllGui)
 DexFrame.MouseButton1Click:Connect(Dex)
 SpeedCoilFrame.MouseButton1Click:Connect(SpeedCoil)
-SecondFrameButton.MouseButton1Click:Connect(SuperUp)
-
-Connect(VisibleGuiScript)
+Akkk.MouseButton1Click:Connect(Ak47)
