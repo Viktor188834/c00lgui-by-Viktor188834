@@ -1,3 +1,7 @@
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+    Title = "c00lgui by Viktor188834";
+    Text = "c00lgui by Viktor188834";
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
 local Player = game:GetService("Players").LocalPlayer
 
 -- Create a ScreenGui instead of GuiMain
