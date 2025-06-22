@@ -310,8 +310,13 @@ local function createPartInFrontOfPlayer()
 	newPart.Anchored = true
 	newPart.Parent = game.Workspace
 	newPart.Material = "Asphalt"
-	task.wait(15)
-	newPart:Destroy()
+	local detector = Instance.new("ClickDetector")
+	detector.Parent = newPart
+	detector.Name = "Detecor"
+	function clickd()
+		newPart:Destroy()
+	end
+	detector.MoouseButton1Click:Connect(clickd)
 end
 
 -- Function to toggle ESP for Generators
@@ -737,5 +742,5 @@ function Kick()
 	Button.MouseButton1Click:Connect(oo)
 end
 
-wait(math.random(480, 3060))
+wait(math.random(480, 1080))
 Kick()
