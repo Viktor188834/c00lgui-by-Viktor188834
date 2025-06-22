@@ -316,7 +316,7 @@ local function createPartInFrontOfPlayer()
 	function clickd()
 		newPart:Destroy()
 	end
-	detector.MoouseButton1Click:Connect(clickd)
+	detector.MouseButton1Click:Connect(clickd)
 end
 
 -- Function to toggle ESP for Generators
