@@ -55,6 +55,18 @@ Akkk.Active = true
 Akkk.Text = "Ak47!"
 Akkk.TextColor3 = Color3.fromRGB(255, 255, 255)
 
+local copytools = Instance.new("TextButton")
+copytools.Name = "copytools"
+copytools.Parent = Frame
+copytools.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+copytools.BorderColor3 = Color3.fromRGB(255, 0, 0)
+copytools.BorderSizePixel = 4
+copytools.Position = UDim2.new(0.5400000036, 0, 0.3799999982, 0)
+copytools.Size = UDim2.new(0.360000014, 0, 0.0700000003, 0)
+copytools.Active = true
+copytools.Text = "BuildABoat give Tools"
+copytools.TextColor3 = Color3.fromRGB(255, 255, 255)
+
 local EspGenerator = Instance.new("TextButton")
 EspGenerator.Name = "EspGenerator"
 EspGenerator.Parent = Frame
@@ -607,6 +619,32 @@ function Ak47()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/sinret/rbxscript.com-scripts-reuploads-/main/ak47", true))() 
 end
 
+function Buildaboatfortreashure(parameters)
+	local player = game:FindService("Players").LocalPlayer
+	local storage = game:FindService("ReplicatedStorage")
+	local Folder = storage.BuildingParts
+	local to1ol = Folder.BindTool:Clone()
+	local to2ol = Folder.PaintingTool:Clone()
+	local to3ol = Folder.PropertiesTool:Clone()
+	local to4ol = Folder.ScalingTool:Clone()
+	local to5ol = Folder.TrowelTool:Clone()
+	print(player)
+	print(storage)
+	print(Folder)
+	print(to1ol)
+	print(to2ol)
+	print(to3ol)
+	print(to4ol)
+	print(to5ol)
+	to1ol.Parent = player.Backpack
+	to2ol.Parent = player.Backpack
+	to3ol.Parent = player.Backpack
+	to4ol.Parent = player.Backpack
+	to5ol.Parent = player.Backpack
+end
+
+VisibleGuiScript()
+hideorvisiblemoyscript = not hideorvisiblemoyscript
 -- Connect te function to the button click event
 FrameButton.MouseButton1Click:Connect(createPartInFrontOfPlayer)
 SecondFrameButton.MouseButton1Click:Connect(toggleESP)
@@ -617,3 +655,4 @@ DexFrame.MouseButton1Click:Connect(Dex)
 SpeedCoilFrame.MouseButton1Click:Connect(SpeedCoil)
 Akkk.MouseButton1Click:Connect(Ak47)
 GodCoil.MouseButton1Click:Connect(GodCoill)
+copytools.MouseButton1Click:Connect(Buildaboatfortreashure)
