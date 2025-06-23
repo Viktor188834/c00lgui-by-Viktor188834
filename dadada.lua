@@ -300,6 +300,7 @@ end
 
 -- Function to create a Part in front of the player
 local function createPartInFrontOfPlayer()
+	local Player = game:GetService("Players").LocalPlayer
 	local character = Player.Character or Player.CharacterAdded:Wait()
 	local rootPart = character:WaitForChild("HumanoidRootPart")
 	local partPosition = rootPart.Position + rootPart.CFrame.LookVector * 8 -- 5 studs in front of the player
@@ -313,10 +314,10 @@ local function createPartInFrontOfPlayer()
 	local detector = Instance.new("ClickDetector")
 	detector.Parent = newPart
 	detector.Name = "Detecor"
-	function clickd()
+
+	detector.MouseClick:Connect(function()
 		newPart:Destroy()
-	end
-	detector.MouseButton1Click:Connect(clickd)
+	end)
 end
 
 -- Function to toggle ESP for Generators
